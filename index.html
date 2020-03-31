@@ -10,6 +10,20 @@
         padding-top: 7.5rem;
         max-width: 80rem;
       }
+      .video {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+        margin-bottom: 25px;
+      }
+      .video iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
     </style>
   </head>
   <body>
@@ -29,9 +43,9 @@
           When VPB loads a page, the Preview Dialer will confirm that you want to call the person, and then dial for you.
           The audio comes through your browser.
         </p>
-        <p>
-          <img src="screenshot.png" alt="A screenshot of the preview dialer confirming the call.">
-        </p>
+        <div class='video'>
+          <iframe src='https://www.youtube.com/embed/15yfYThPV44' frameborder='0' allowfullscreen></iframe>
+        </div>
         <p>
           You can use the preview dialer to call cell phones that aren't legal to call with a predictive dialer.
         </p>
